@@ -12,6 +12,7 @@
     <artifactId>simple-oidc-core</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>org.bitbucket.b_c</groupId>
             <artifactId>jose4j</artifactId>

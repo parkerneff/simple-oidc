@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+
+<form method="POST" action="/login" >
+    <input type="hidden" name="reponse_type" value="${response_type}" />
+    <input type="hidden" name="scope" value="${scope}" />
+    <input type="hidden" name="client_id" value="${client_id}" />
+    <input type="hidden" name="state" value="${state}" />
+    <input type="hidden" name="redirect_uri" value="${redirect_uri}" />
+
+    <p>Id: <input name="user_id" type="text" /></p>
+    <p>Id: <input name="password" type="password" /></p>
+
+    <p><input type="submit" value="Submit" /> </p>
+
+</form>
+</body>
+</html>
