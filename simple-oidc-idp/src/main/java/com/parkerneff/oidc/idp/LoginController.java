@@ -40,7 +40,7 @@ Location: https://openid.c2id.com/login?
 
     @PostMapping("/login")
     public String processLoginForm(@RequestParam("response_type") String responseType,
-                            @RequestParam("code") String code,
+                            @RequestParam("scope") String scope,
                             @RequestParam("client_id") String clientId,
                             @RequestParam("state") String state,
                             @RequestParam("redirect_uri") String redirectUri,
