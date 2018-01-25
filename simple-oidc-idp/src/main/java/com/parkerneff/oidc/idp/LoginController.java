@@ -22,7 +22,7 @@ Location: https://openid.c2id.com/login?
           &state=af0ifjsldkj
           &redirect_uri=https%3A%2F%2Fclient.example.org%2Fcb
      */
-    @GetMapping("/login")
+    @GetMapping("/zlogin")
     public String prepareLoginForm(@RequestParam("response_type") String responseType,
                             @RequestParam("scope") String scope,
                             @RequestParam("client_id") String clientId,
@@ -38,7 +38,7 @@ Location: https://openid.c2id.com/login?
         return "login";
     }
 
-    @PostMapping("/login")
+    @PostMapping("/zlogin")
     public String processLoginForm(@RequestParam("response_type") String responseType,
                             @RequestParam("scope") String scope,
                             @RequestParam("client_id") String clientId,
