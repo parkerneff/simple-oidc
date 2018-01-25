@@ -2,16 +2,14 @@ package com.parkerneff.oidc.idp;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class LoginController {
-    private Log log = LogFactory.getLog(LoginController.class);
+public class ZLoginController {
+    private Log log = LogFactory.getLog(ZLoginController.class);
 // http://localhost:8080/login?response_type=code&scope=openid&client_id=s6BhdRkqt3&state=af0ifjsldkj&redirect_uri=https%3A%2F%2Fclient.example.org%2Fcb
     /*
     HTTP/1.1 302 Found
